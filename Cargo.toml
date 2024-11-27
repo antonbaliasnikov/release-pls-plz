@@ -1,3 +1,10 @@
 [workspace]
 resolver = "2"
 members = ["core/core-test-1", "core/core-test-2"]
+
+[workspace.package]
+authors = [
+    "Anton Baliasnikov <aba@matterlabs.dev>",
+]
+license = "MIT OR Apache-2.0"
+edition = "2021"

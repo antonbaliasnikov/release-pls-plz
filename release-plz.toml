@@ -1,0 +1,13 @@
+[workspace]
+git_release_enable = false
+dependencies_update = true # run `cargo update` in the release PR
+pr_name = "release: {{ package }} v{{ version }}" # template for the PR name
+git_release_body = """
+{{ changelog }}
+{% if remote.contributors %}
+### Contributors Core
+{% for contributor in remote.contributors %}
+* @{{ contributor.username }}
+{% endfor %}
+{% endif %}
+"""
