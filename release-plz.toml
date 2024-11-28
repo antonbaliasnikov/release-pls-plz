@@ -17,3 +17,4 @@ git_tag_name = "core-v{{version}}"
 name = "core-test-2"
 git_release_enable = false
 git_tag_enable = false
+changelog_update = false
