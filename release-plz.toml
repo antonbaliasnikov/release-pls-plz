@@ -1,7 +1,6 @@
 [workspace]
 git_release_enable = false
 dependencies_update = true # run `cargo update` in the release PR
-pr_name = "release: core v{{ version }}" # template for the PR name
 pr_branch_prefix = "core-"
 git_release_body = """
 {{ changelog }}
