@@ -7,10 +7,13 @@ pr_labels = ["release", "crates.io"]
 
 [[package]]
 name = "core-test-1"
+git_release_enable = true
+chanelog_include = ["core-test-2"]
 changelog_path = "CHANGELOG.md"
-git_release_enable = false
+git_tag_enable = true
+git_tag_name = "core-v{{version}}"
 
 [[package]]
 name = "core-test-2"
-changelog_path = "CHANGELOG.md"
 git_release_enable = false
+git_tag_enable = false
