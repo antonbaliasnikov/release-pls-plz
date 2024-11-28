@@ -1,5 +1,16 @@
 [workspace]
 git_release_enable = true
 dependencies_update = true # run `cargo update` in the release PR
+pr_name = "release: core {{version}}" # template for the PR name
 pr_branch_prefix = "core-"
 pr_labels = ["release", "crates.io"]
+
+[[package]]
+name = "core-test-1"
+changelog_path = "CHANGELOG.md"
+git_release_enable = false
+
+[[package]]
+name = "core-test-2"
+changelog_path = "CHANGELOG.md"
+git_release_enable = false
