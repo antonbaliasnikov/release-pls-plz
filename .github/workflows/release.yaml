@@ -19,6 +19,7 @@ jobs:
     with:
       manifest_path: 'Cargo.toml'
       config: 'release-plz.toml'
+      concurrency-suffix: 'core'
 
   release-prover:
     uses: ./.github/workflows/release-plz.yaml
@@ -28,3 +29,4 @@ jobs:
     with:
       manifest_path: 'prover/Cargo.toml'
       config: 'prover/release-plz.toml'
+      concurrency-suffix: 'prover'

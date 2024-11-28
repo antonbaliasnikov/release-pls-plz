@@ -25,6 +25,10 @@ on:
         description: 'Path to release-plz configuration file'
         required: false
         default: 'release-plz.toml'
+      concurrency-suffix:
+        type: string
+        description: 'Suffix to use '
+        required: false
 
 jobs:
 
@@ -61,7 +65,7 @@ jobs:
     name: Release-plz PR
     runs-on: ubuntu-latest
     concurrency:
-      group: release-plz-${{ github.ref }}
+      group: release-plz-${{ github.ref }}-${{ inputs.concurrency-suffix}}
       cancel-in-progress: false
     steps:
       - name: Checkout repository
