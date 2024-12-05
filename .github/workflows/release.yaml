@@ -12,20 +12,22 @@ on:
 jobs:
 
   release-core:
-    uses: ./.github/workflows/release-plz.yaml
+    uses: matter-labs/zksync-ci-common/.github/workflows/release-plz.yaml@aba-add-toolchain-version-parameter
     secrets:
       gh_token: ${{ secrets.GITHUB_TOKEN }}
       cargo_registry_token: ${{ secrets.CRATES_IO_TOKEN }}
+      slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
     with:
       manifest_path: 'Cargo.toml'
       config: 'release-plz.toml'
       concurrency-suffix: 'core'
 
   release-prover:
-    uses: ./.github/workflows/release-plz.yaml
+    uses: matter-labs/zksync-ci-common/.github/workflows/release-plz.yaml@aba-add-toolchain-version-parameter
     secrets:
       gh_token: ${{ secrets.GITHUB_TOKEN }}
       cargo_registry_token: ${{ secrets.CRATES_IO_TOKEN }}
+      slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
     with:
       manifest_path: 'prover/Cargo.toml'
       config: 'prover/release-plz.toml'
