@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.7](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.6...core-v0.2.7) - 2024-12-05
+
+### Added
+
+- *(core-test-2)* update core test 2
+
+### Fixed
+
+- *(core-test-2)* break build
+
 ## [0.2.6](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.5...core-v0.2.6) - 2024-11-28
 
 ### Added

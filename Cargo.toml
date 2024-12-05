@@ -3,7 +3,7 @@ resolver = "2"
 members = ["core/core-test-1", "core/core-test-2"]
 
 [workspace.package]
-version = "0.2.6"
+version = "0.2.7"
 authors = [
     "Anton Baliasnikov <aba@matterlabs.dev>",
 ]
