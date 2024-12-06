@@ -1,11 +1,13 @@
 [workspace]
 dependencies_update = true            # run `cargo update` in the release PR
 pr_labels = ["release", "crates.io"]
-changelog_path = "./CHANGELOG.md"
 changelog_update = false              # Disable the changelog for all packages.
 git_tag_enable = false                # Disable individual tags for all packages.
 git_release_enable = false            # Disable individual releases for all packages.
 semver_check = false                  # Disable API breaking changes checks with cargo-semver-checks.
+pr_name = "release: core crates.io"   # template for the PR name
+pr_branch_prefix = "core-"            # PR branch prefix
+
 
 [[package]]
 name = "core-test-1"
@@ -15,6 +17,7 @@ git_tag_name = "core-libs-v{{version}}"
 git_release_name = "core-libs-v{{version}}"
 changelog_update = true
 changelog_include = ["core-test-2"]
+changelog_path = "./core/libs/CHANGELOG.md"
 version_group = "libs"
 
 [[package]]
@@ -29,6 +32,7 @@ git_tag_name = "core-bins-v{{version}}"
 git_release_name = "core-bins-v{{version}}"
 changelog_update = true
 changelog_include = ["core-bin-2"]
+changelog_path = "./core/bins/CHANGELOG.md"
 version_group = "bins"
 
 [[package]]
