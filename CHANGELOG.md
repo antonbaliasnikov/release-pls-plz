@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.8](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-libs-v0.2.7...core-libs-v0.2.8) - 2024-12-06
+
+### Added
+
+- add bin packages
+
+## [0.1.1](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-bins-v0.1.0...core-bins-v0.1.1) - 2024-12-06
+
+### Added
+
+- *(core-bin-1)* update core bin 1 package
+
 ## [0.2.7](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.6...core-v0.2.7) - 2024-12-05
 
 ### Added
