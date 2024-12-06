@@ -12,7 +12,7 @@ on:
 jobs:
 
   release-core:
-    uses: matter-labs/zksync-ci-common/.github/workflows/release-plz.yaml@v1
+    uses: matter-labs/zksync-ci-common/.github/workflows/release-plz.yaml@aba-recursive-submodules
     secrets:
       gh_token: ${{ secrets.GITHUB_TOKEN }}
       cargo_registry_token: ${{ secrets.CRATES_IO_TOKEN }}
@@ -21,6 +21,7 @@ jobs:
       manifest_path: 'Cargo.toml'
       config: 'release-plz.toml'
       concurrency-suffix: 'core'
+      org-owner: 'antonbaliasnikov'
 
 #  release-prover:
 #    uses: matter-labs/zksync-ci-common/.github/workflows/release-plz.yaml@v1
