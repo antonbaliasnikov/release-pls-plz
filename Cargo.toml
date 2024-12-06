@@ -1,6 +1,9 @@
 [workspace]
 resolver = "2"
-members = ["core/core-test-1", "core/core-test-2"]
+members = [
+    "core/bins/core-bin-1", "core/bins/core-bin-2",
+    "core/libs/core-test-1", "core/libs/core-test-2"
+]
 
 [workspace.package]
 version = "0.2.7"
