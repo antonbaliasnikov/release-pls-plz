@@ -1,0 +1,9 @@
+[package]
+name = "core-bin-1"
+version = "0.1.0"
+authors.workspace = true
+license.workspace = true
+edition.workspace = true
+description = "Core bin 1"
+
+[dependencies]
