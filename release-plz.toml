@@ -25,6 +25,10 @@ name = "core-test-2"
 version_group = "libs"
 
 [[package]]
+name = "core-test-3"
+version_group = "libs"
+
+[[package]]
 name = "core-bin-1"
 git_release_enable = true
 git_tag_enable = true
