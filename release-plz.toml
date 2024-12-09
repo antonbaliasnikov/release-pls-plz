@@ -7,23 +7,69 @@ git_release_enable = false            # Disable individual releases for all pack
 semver_check = false                  # Disable API breaking changes checks with cargo-semver-checks.
 pr_name = "release: core crates.io"   # template for the PR name
 pr_branch_prefix = "core-"            # PR branch prefix
-changelog_path = "./core/CHANGELOG.md"
 
 [changelog]
+header = """# Changelog
+
+## [Unreleased]
+"""
+
 body = """
 
-## `{{ version_group }}` - [{{ version | trim_start_matches(pat="v") }}](https://github.com/marcoieni/rust-workspace-example/compare/{{ package }}-v{{ previous.version }}...{{ package }}-v{{ version }}) - {{ timestamp | date(format="%Y-%m-%d") }}
-{% for group, commits in commits | group_by(attribute="group") %}
-### {{ group | upper_first }}
-{% for commit in commits %}
-{%- if commit.scope -%}
-- *({{commit.scope}})* {% if commit.breaking %}[**breaking**] {% endif %}{{ commit.message }}{%- if commit.links %} ({% for link in commit.links %}[{{link.text}}]({{link.href}}) {% endfor -%}){% endif %}
-{% else -%}
-- {% if commit.breaking %}[**breaking**] {% endif %}{{ commit.message }}
-{% endif -%}
-{% endfor -%}
-{% endfor %}
+{% macro print_commit(commit) -%}
+    - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
+      {% if commit.breaking %}[**breaking**] {% endif %}\
+      {{ commit.message | upper_first }} - \
+      ([{{ commit.id | truncate(length=7, end="") }}]({{ remote.link }}/commit/{{ commit.id }}))\
+{% endmacro -%}
+
+{% if version %}\
+    {% if previous.version %}\
+        ## [{{ version | trim_start_matches(pat="v") }}]({{ release_link }})
+    {% else %}\
+        ## [{{ version | trim_start_matches(pat="v") }}]
+    {% endif %}\
+{% endif %}\
+
+{% for group, commits in commits
+| filter(attribute="merge_commit", value=false)
+| unique(attribute="message")
+| group_by(attribute="group") %}
+    ### {{ group | striptags | trim | upper_first }}
+    {% for commit in commits
+    | filter(attribute="scope")
+    | sort(attribute="scope") %}
+        {{ self::print_commit(commit=commit) }}
+    {%- endfor -%}
+    {% raw %}\n{% endraw %}\
+    {%- for commit in commits %}
+        {%- if not commit.scope -%}
+            {{ self::print_commit(commit=commit) }}
+        {% endif -%}
+    {% endfor -%}
+{% endfor %}\n
 """
+
+commit_parsers = [
+    { message = "^feat", group = "<!-- 0 -->⛰️ Features" },
+    { message = "^fix", group = "<!-- 1 -->🐛 Bug Fixes" },
+    { message = "^doc", group = "<!-- 3 -->📚 Documentation" },
+    { message = "^perf", group = "<!-- 4 -->⚡ Performance" },
+    { message = "^refactor\\(clippy\\)", skip = true },
+    { message = "^refactor", group = "<!-- 2 -->🚜 Refactor" },
+    { message = "^style", group = "<!-- 5 -->🎨 Styling" },
+    { message = "^test", group = "<!-- 6 -->🧪 Testing" },
+    { message = "^chore\\(release\\):", skip = true },
+    { message = "^chore: release", skip = true },
+    { message = "^chore\\(deps.*\\)", skip = true },
+    { message = "^chore\\(pr\\)", skip = true },
+    { message = "^chore\\(pull\\)", skip = true },
+    { message = "^chore\\(npm\\).*yarn\\.lock", skip = true },
+    { message = "^chore|^ci", group = "<!-- 7 -->⚙️ Miscellaneous Tasks" },
+    { body = ".*security", group = "<!-- 8 -->🛡️ Security" },
+    { message = "^revert", group = "<!-- 9 -->◀️ Revert" },
+]
+
 
 [[package]]
 name = "core-test-1"
@@ -32,6 +78,7 @@ git_tag_enable = true
 git_tag_name = "core-libs-v{{version}}"
 git_release_name = "core-libs-v{{version}}"
 changelog_update = true
+changelog_path = "./core/libs/CHANGELOG.md"
 changelog_include = ["core-test-2", "core-test-3"]
 version_group = "libs"
 
@@ -51,6 +98,7 @@ git_tag_enable = true
 git_tag_name = "core-bins-v{{version}}"
 git_release_name = "core-bins-v{{version}}"
 changelog_update = true
+changelog_path = "./core/bins/CHANGELOG.md"
 changelog_include = ["core-bin-2"]
 version_group = "bins"
 
