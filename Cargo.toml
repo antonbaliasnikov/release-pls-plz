@@ -2,7 +2,8 @@
 resolver = "2"
 members = [
     "core/bins/core-bin-1", "core/bins/core-bin-2",
-    "core/libs/core-test-1", "core/libs/core-test-2"
+    "core/libs/core-test-1", "core/libs/core-test-2",
+    "core/libs/core-test-3"
 ]
 
 [workspace.package]
