@@ -27,7 +27,7 @@ version_group = "libs"
 [[package]]
 name = "core-test-3"
 version_group = "libs"
-publish = false
+release = true
 
 [[package]]
 name = "core-bin-1"
