@@ -7,6 +7,7 @@ git_release_enable = false            # Disable individual releases for all pack
 semver_check = false                  # Disable API breaking changes checks with cargo-semver-checks.
 pr_name = "release: core crates.io"   # template for the PR name
 pr_branch_prefix = "core-"            # PR branch prefix
+changelog_path = "./core/CHANGELOG.md"
 
 
 [[package]]
@@ -16,8 +17,7 @@ git_tag_enable = true
 git_tag_name = "core-libs-v{{version}}"
 git_release_name = "core-libs-v{{version}}"
 changelog_update = true
-changelog_include = ["core-test-2"]
-changelog_path = "./core/libs/CHANGELOG.md"
+changelog_include = ["core-test-2", "core-test-3"]
 version_group = "libs"
 
 [[package]]
@@ -37,7 +37,6 @@ git_tag_name = "core-bins-v{{version}}"
 git_release_name = "core-bins-v{{version}}"
 changelog_update = true
 changelog_include = ["core-bin-2"]
-changelog_path = "./core/bins/CHANGELOG.md"
 version_group = "bins"
 
 [[package]]
