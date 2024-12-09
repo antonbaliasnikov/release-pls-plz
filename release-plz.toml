@@ -55,7 +55,6 @@ commit_parsers = [
     { message = "^fix", group = "<!-- 1 -->🐛 Bug Fixes" },
     { message = "^doc", group = "<!-- 3 -->📚 Documentation" },
     { message = "^perf", group = "<!-- 4 -->⚡ Performance" },
-    { message = "^refactor\\(clippy\\)", skip = true },
     { message = "^refactor", group = "<!-- 2 -->🚜 Refactor" },
     { message = "^style", group = "<!-- 5 -->🎨 Styling" },
     { message = "^test", group = "<!-- 6 -->🧪 Testing" },
@@ -84,6 +83,8 @@ version_group = "libs"
 
 [[package]]
 name = "core-test-2"
+git_tag_enable = true
+git_tag_name = "core-test-2-v{{version}}"
 version_group = "libs"
 
 [[package]]
