@@ -33,3 +33,4 @@ jobs:
       manifest_path: 'prover/Cargo.toml'
       config: 'prover/release-plz.toml'
       concurrency-suffix: 'prover'
+      org-owner: 'antonbaliasnikov'
