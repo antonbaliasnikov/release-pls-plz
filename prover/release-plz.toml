@@ -9,6 +9,7 @@ git_release_enable = true # Whether to enable github release
 dependencies_update = true # Whether to run `cargo update` in the release PR
 changelog_update = true # disable changelog updates
 changelog_path = "CHANGELOG.md" # path to the changelog file
+git_tag_name = "prover-v{{version}}"
 
 # Aux things
 pr_labels = ["release", "crates.io"]
