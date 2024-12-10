@@ -9,6 +9,6 @@ members = [
 authors = [
     "Anton Baliasnikov <aba@matterlabs.dev>",
 ]
-version = "0.1.3"
+version = "0.1.4"
 license = "MIT OR Apache-2.0"
 edition = "2021"
