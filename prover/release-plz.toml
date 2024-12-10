@@ -1,7 +1,7 @@
 [workspace]
 
 # Mandatory settings
-pr_name = "release: prover crates.io" # template for the PR name
+pr_name = "release: prover {version}" # template for the PR name
 pr_branch_prefix = "prover-"
 
 # Optional settings to decide
