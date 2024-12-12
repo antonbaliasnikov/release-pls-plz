@@ -11,3 +11,8 @@ pr_branch_prefix = "core-"             # PR branch prefix
 git_release_name = "core {{version}}"  # template for the release name
 allow_dirty = true                     # Allow dirty git repository
 release_commits = "^(feat:|docs:)"     # Commits that trigger a release
+
+#[[package]]
+#name = "core-bin-1"
+#git_only = true
+#publish = false
