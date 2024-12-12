@@ -1,3 +1,7 @@
 {
-  "core": "0.2.12"
+  "core/bins/core-bin-1": "0.2.12",
+  "core/bins/core-bin-2": "0.2.12",
+  "core/bins/core-test-1": "0.2.12",
+  "core/bins/core-test-2": "0.2.12",
+  "core/bins/core-test-3": "0.2.12"
 }
