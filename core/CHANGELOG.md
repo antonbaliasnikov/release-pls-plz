@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [core-v0.2.13] - 2024-12-12
+
+### 🚀 Features
+
+- Update core bin 1
+- *(core-bin-1)* Some change
+- Not publish core bin 1
+- Change in core bin 1
+- Update core bin 1 package
+
+### 🐛 Bug Fixes
+
+- Update core bin 1 package
+- Update core test 1
+
+### ⚙️ Miscellaneous Tasks
+
+- Try to check config
+- Do not update changelog with release plz
+- Test
+- Move to git cliff
+- Test
+
 ## [core-v0.2.12] - 2024-12-12
 
 ### 🚀 Features
