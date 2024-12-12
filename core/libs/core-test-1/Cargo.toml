@@ -7,3 +7,4 @@ edition.workspace = true
 description = "Core test 1"
 
 [dependencies]
+core-bin-1.workspace = true
