@@ -7,7 +7,6 @@ members = [
 ]
 
 [workspace.package]
-version = "0.2.12"
 authors = [
     "Anton Baliasnikov <aba@matterlabs.dev>",
 ]
