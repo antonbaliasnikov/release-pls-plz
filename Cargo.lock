@@ -5,6 +5,9 @@ version = 3
 [[package]]
 name = "core-bin-1"
 version = "0.2.12"
+dependencies = [
+ "core-test-1",
+]
 
 [[package]]
 name = "core-bin-2"
