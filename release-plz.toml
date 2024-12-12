@@ -14,6 +14,7 @@ git_release_name = "core {{version}}"  # template for the release name
 [[package]]
 name = "core-bin-1"
 changelog_update = true
+publish = false
 
 [[package]]
 name = "core-test-1"
