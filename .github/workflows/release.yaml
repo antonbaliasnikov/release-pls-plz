@@ -30,8 +30,8 @@ jobs:
       cargo_registry_token: ${{ secrets.CRATES_IO_TOKEN }}
       slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
     with:
-      manifest_path: 'Cargo.toml'
-      config: 'release-plz.toml'
+      manifest_path: 'core/Cargo.toml'
+      config: 'core/release-plz.toml'
       concurrency-suffix: 'core'
       org-owner: 'antonbaliasnikov'
 

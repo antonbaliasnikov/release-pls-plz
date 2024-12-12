@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members = [
+    "bins/core-bin-1", "bins/core-bin-2",
+    "libs/core-test-1", "libs/core-test-2",
+    "libs/core-test-3"
+]
+
+[workspace.dependencies]
+core-test-1 = {  version = "0.2.12", path = "libs/core-test-1" }
+core-bin-1 = {  version = "0.2.12", path = "bins/core-bin-1" }
+
+[workspace.package]
+version = "0.2.12"
+authors = [
+    "Anton Baliasnikov <aba@matterlabs.dev>",
+]
+license = "MIT OR Apache-2.0"
+edition = "2021"
