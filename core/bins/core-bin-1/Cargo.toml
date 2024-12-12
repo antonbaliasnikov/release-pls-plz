@@ -1,6 +1,6 @@
 [package]
 name = "core-bin-1"
-version = "0.2.12"
+version = "0.2.13"
 authors.workspace = true
 license.workspace = true
 edition.workspace = true
