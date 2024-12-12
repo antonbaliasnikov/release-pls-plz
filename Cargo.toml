@@ -8,6 +8,7 @@ members = [
 
 [workspace.dependencies]
 core-test-1 = {  version = "0.2.12", path = "core/libs/core-test-1" }
+core-bin-1 = {  version = "0.2.12", path = "core/bins/core-bin-1" }
 
 [workspace.package]
 version = "0.2.12"
