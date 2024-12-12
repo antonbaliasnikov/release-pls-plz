@@ -1,9 +1,10 @@
 [package]
 name = "core-bin-1"
-version = "0.2.12"
+version.workspace = true
 authors.workspace = true
 license.workspace = true
 edition.workspace = true
 description = "Core bin 1"
+publish = false
 
 [dependencies]
