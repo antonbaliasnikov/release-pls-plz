@@ -1,8 +1,7 @@
 [workspace]
 dependencies_update = false            # run `cargo update` in the release PR
 pr_labels = ["release", "crates.io"]
-changelog_update = true                # Disable the changelog for all packages.
-changelog_path = "./core/CHANGELOG.md" # Path to the changelog file.
+changelog_update = false                # Disable the changelog for all packages.
 git_tag_enable = true                 # Disable individual tags for all packages.
 git_tag_name = "core-v{{version}}"
 git_release_enable = true             # Disable individual releases for all packages.
