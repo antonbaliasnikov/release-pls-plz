@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.13](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.12...core-v0.2.13) (2024-12-12)
+
+
+### Features
+
+* update core ([dfb417a](https://github.com/antonbaliasnikov/release-pls-plz/commit/dfb417a80018b71fe904b1f5c8bb8bebe4c80375))
+
 ## [0.2.12](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.11...core-v0.2.12) (2024-12-12)
 
 
