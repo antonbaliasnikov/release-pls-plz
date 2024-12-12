@@ -13,9 +13,6 @@ version = "0.2.13"
 [[package]]
 name = "core-test-1"
 version = "0.2.13"
-dependencies = [
- "core-bin-1",
-]
 
 [[package]]
 name = "core-test-2"
