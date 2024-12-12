@@ -11,6 +11,10 @@ pr_name = "release: core {{version}}"    # template for the PR name
 pr_branch_prefix = "core-"             # PR branch prefix
 git_release_name = "core {{version}}"  # template for the release name
 
+[package]
+name = "core-test-1"
+changelog_include = ["core-bin-1"]
+
 [changelog]
 header = """# Changelog
 
