@@ -1,0 +1,15 @@
+[workspace]
+
+# Mandatory settings
+pr_name = "release: prover {{version}}" # template for the PR name
+pr_branch_prefix = "prover-"
+
+# Optional settings to decide
+git_release_enable = true # Whether to enable github release
+dependencies_update = true # Whether to run `cargo update` in the release PR
+changelog_update = true # disable changelog updates
+changelog_path = "CHANGELOG.md" # path to the changelog file
+git_tag_name = "prover-v{{version}}"
+
+# Aux things
+pr_labels = ["release", "crates.io"]
