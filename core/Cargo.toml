@@ -10,7 +10,7 @@ members = [
 core-test-1 = { version = "0.2.13", path = "libs/core-test-1" }
 
 [workspace.package]
-version = "0.2.13"
+version = "0.2.14"
 authors = [
     "Anton Baliasnikov <aba@matterlabs.dev>",
 ]
