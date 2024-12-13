@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.15](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.14...core-v0.2.15) - 2024-12-13
+
+### Added
+
+- try new config
+- add core bin 1
+- some important change in core bin 1
+
 ## [0.2.14](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.13...core-v0.2.14) - 2024-12-13
 
 ### Added
