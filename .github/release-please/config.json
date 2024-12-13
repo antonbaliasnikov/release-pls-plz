@@ -13,7 +13,7 @@
       "extra-files": [
         {
           "type": "generic",
-          "path": "core/Cargo.toml"
+          "path": "Cargo.toml"
         }
       ]
     },
@@ -23,7 +23,7 @@
       "extra-files": [
         {
           "type": "generic",
-          "path": "prover/Cargo.toml"
+          "path": "Cargo.toml"
         }
       ]
     }
