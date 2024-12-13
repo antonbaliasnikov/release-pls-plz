@@ -4,20 +4,20 @@ version = 4
 
 [[package]]
 name = "core-bin-1"
-version = "0.2.14"
+version = "0.2.15"
 
 [[package]]
 name = "core-bin-2"
-version = "0.2.14"
+version = "0.2.15"
 
 [[package]]
 name = "core-test-1"
-version = "0.2.14"
+version = "0.2.15"
 
 [[package]]
 name = "core-test-2"
-version = "0.2.14"
+version = "0.2.15"
 
 [[package]]
 name = "core-test-3"
-version = "0.2.14"
+version = "0.2.15"
