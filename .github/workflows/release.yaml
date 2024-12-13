@@ -12,26 +12,15 @@ permissions:
 
 jobs:
 
-#  release-please:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Run release-please
-#        id: release
-#        uses: googleapis/release-please-action@v4
-#        with:
-#          token: ${{ secrets.GITHUB_TOKEN }}
-#          config-file: .github/release-please/config.json
-#          manifest-file: .github/release-please/manifest.json
-
-  release-core:
-    uses: matter-labs/zksync-ci-common/.github/workflows/release-plz.yaml@aba-test-git-cliff
+  release:
+    uses: matter-labs/zksync-ci-common/.github/workflows/release-please.yaml@aba-release-please-support
     secrets:
       gh_token: ${{ secrets.GITHUB_TOKEN }}
       cargo_registry_token: ${{ secrets.CRATES_IO_TOKEN }}
       slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
     with:
-      manifest_path: 'core/Cargo.toml'
-      config: 'core/release-plz.toml'
+      manifest: '.github/release-please/manifest.json'
+      config: '.github/release-please/config.json'
       concurrency-suffix: 'core'
       org-owner: 'antonbaliasnikov'
 

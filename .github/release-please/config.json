@@ -1,21 +1,31 @@
 {
-  "separate-pull-requests": false,
-  "group-pull-request-title-pattern": "chore: release ${branch}",
+  "separate-pull-requests": true,
+  "group-pull-request-title-pattern": "chore: release ${component} ${version}",
+  "bootstrap-sha": "2642a686b3688ca0b4ceea970e52e28fa26c7c45",
   "bump-minor-pre-major": true,
   "bump-patch-for-minor-pre-major": true,
   "include-component-in-tag": true,
-  "release-type": "rust",
-  "plugins": [
-    {
-      "type": "cargo-workspace",
-      "merge": false
-    }
-  ],
+  "release-type": "simple",
   "packages": {
-    "core/bins/core-bin-1": {},
-    "core/bins/core-bin-2": {},
-    "core/libs/core-test-1": {},
-    "core/libs/core-test-2": {},
-    "core/libs/core-test-3": {}
+    "core": {
+      "component": "core",
+      "path": "core",
+      "extra-files": [
+        {
+          "type": "generic",
+          "path": "core/Cargo.toml"
+        }
+      ]
+    },
+    "prover": {
+      "component": "prover",
+      "path": "prover",
+      "extra-files": [
+        {
+          "type": "generic",
+          "path": "prover/Cargo.toml"
+        }
+      ]
+    }
   }
 }
