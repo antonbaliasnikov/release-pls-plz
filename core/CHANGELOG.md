@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.14](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.13...core-v0.2.14) (2024-12-13)
+
+
+### Features
+
+* add core bin 1 ([20756f1](https://github.com/antonbaliasnikov/release-pls-plz/commit/20756f100274a1b31324575a70828a4762627150))
+* some important change in core bin 1 ([e0dd77f](https://github.com/antonbaliasnikov/release-pls-plz/commit/e0dd77fb6146bc064576d73a1fd4fdd326a7ed5c))
+* try another thing ([32220cc](https://github.com/antonbaliasnikov/release-pls-plz/commit/32220cc17f7e1bee60ada823bd46c8aed0a97d08))
+* try new config ([fa0ebf0](https://github.com/antonbaliasnikov/release-pls-plz/commit/fa0ebf0ebb91616fce8c6e80e8670653ce7d6517))
+* update core and prover ([217a6ca](https://github.com/antonbaliasnikov/release-pls-plz/commit/217a6cafa4a9dc4e214c385bc934f9f6f8294d09))
+* update core and prover together ([4547363](https://github.com/antonbaliasnikov/release-pls-plz/commit/45473630f419c1c6683147c7dcb242578486c68e))
+* update core test 1 ([2893905](https://github.com/antonbaliasnikov/release-pls-plz/commit/2893905c48eb65c48c0b16f0a942403ca6c6a94b))
+
+
+### Bug Fixes
+
+* update core test 1 ([a87fe56](https://github.com/antonbaliasnikov/release-pls-plz/commit/a87fe562d9ea2b7da9a3764e4c6a8b8531f8cb93))
+
 ## [0.2.14](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.13...core-v0.2.14) - 2024-12-13
 
 ### Added
