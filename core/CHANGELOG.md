@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.15](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.14...core-v0.2.15) (2024-12-13)
+
+
+### Features
+
+* update core and prover ([217a6ca](https://github.com/antonbaliasnikov/release-pls-plz/commit/217a6cafa4a9dc4e214c385bc934f9f6f8294d09))
+* update core and prover together ([4547363](https://github.com/antonbaliasnikov/release-pls-plz/commit/45473630f419c1c6683147c7dcb242578486c68e))
+* update core test 1 ([2893905](https://github.com/antonbaliasnikov/release-pls-plz/commit/2893905c48eb65c48c0b16f0a942403ca6c6a94b))
+* update core test 2 ([6b29453](https://github.com/antonbaliasnikov/release-pls-plz/commit/6b29453e2d9624d8eb8b7f0e2cbb8f38c9d0de39))
+
 ## [0.2.14](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.13...core-v0.2.14) (2024-12-13)
 
 
