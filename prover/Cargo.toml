@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+members = [
+    "libs/prover-lib-1",
+    "libs/prover-lib-2"
+]
+
+[workspace.package]
+authors = [
+    "Anton Baliasnikov <aba@matterlabs.dev>",
+]
+version = "0.1.5" # x-release-please-version
+license = "MIT OR Apache-2.0"
+edition = "2021"
