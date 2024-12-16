@@ -1,5 +1,5 @@
 {
-  "separate-pull-requests": true,
+  "separate-pull-requests": false,
   "group-pull-request-title-pattern": "chore: release ${component} ${version}",
   "bootstrap-sha": "2642a686b3688ca0b4ceea970e52e28fa26c7c45",
   "bump-minor-pre-major": true,
