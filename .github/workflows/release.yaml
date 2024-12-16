@@ -22,8 +22,8 @@ jobs:
       manifest: '.github/release-please/manifest.json'
       config: '.github/release-please/config.json'
       org-owner: 'antonbaliasnikov'
-      update-cargo-lock: true
-      publish-to-crates-io: true
+      update-cargo-lock: 'true'
+      publish-to-crates-io: 'true'
 
 #  release-prover:
 #    uses: matter-labs/zksync-ci-common/.github/workflows/release-plz.yaml@v1
