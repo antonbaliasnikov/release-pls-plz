@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.16](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.15...core-v0.2.16) (2024-12-16)
+
+
+### Bug Fixes
+
+* update core test 1 ([5222392](https://github.com/antonbaliasnikov/release-pls-plz/commit/52223928656aa313fa53ed139b82e7462025bdd1))
+
 ## [0.2.15](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.14...core-v0.2.15) (2024-12-13)
 
 
