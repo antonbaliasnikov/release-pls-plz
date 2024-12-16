@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.18](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.17...core-v0.2.18) (2024-12-16)
+
+
+### Bug Fixes
+
+* update cargo test 2 ([1b4c813](https://github.com/antonbaliasnikov/release-pls-plz/commit/1b4c813153c5601e0a2001364152b1f02bf9b141))
+
 ## [0.2.17](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.16...core-v0.2.17) (2024-12-16)
 
 
