@@ -1,6 +1,6 @@
 {
   "separate-pull-requests": false,
-  "group-pull-request-title-pattern": "chore: release ${component} ${version}",
+  "group-pull-request-title-pattern": "chore: release ${scope}",
   "bootstrap-sha": "2642a686b3688ca0b4ceea970e52e28fa26c7c45",
   "bump-minor-pre-major": true,
   "bump-patch-for-minor-pre-major": true,
