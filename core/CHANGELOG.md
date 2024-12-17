@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.20](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.19...core-v0.2.20) (2024-12-17)
+
+
+### Features
+
+* update core libs ([40fcd03](https://github.com/antonbaliasnikov/release-pls-plz/commit/40fcd03e861865896b0983fb752b8ac033ca7427))
+
 ## [0.2.19](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.18...core-v0.2.19) (2024-12-17)
 
 
