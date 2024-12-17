@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.19](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.18...core-v0.2.19) (2024-12-17)
+
+
+### Bug Fixes
+
+* fix test 1 ([f8329de](https://github.com/antonbaliasnikov/release-pls-plz/commit/f8329de36f4422d8c2fe893ba274114497e23281))
+* update core bin 1 ([9a9480a](https://github.com/antonbaliasnikov/release-pls-plz/commit/9a9480a4b49d5538bfedef910301203c14a6209e))
+* update core test 1 ([5ae032d](https://github.com/antonbaliasnikov/release-pls-plz/commit/5ae032d7cdca1e5551207d3288a42b00120e4126))
+* update core test 2 ([45144e7](https://github.com/antonbaliasnikov/release-pls-plz/commit/45144e7d4096ee531b7b902434b5b1bccad43066))
+* update core test 2 ([39576ab](https://github.com/antonbaliasnikov/release-pls-plz/commit/39576ab50a00e9efe3cb3a14d2b57d210cc2a757))
+* update core test 2 ([bafd9b3](https://github.com/antonbaliasnikov/release-pls-plz/commit/bafd9b398c05d68a6789dd531d09225ef455ad4a))
+
 ## [0.2.18](https://github.com/antonbaliasnikov/release-pls-plz/compare/core-v0.2.17...core-v0.2.18) (2024-12-16)
 
 

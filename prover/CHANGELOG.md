@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.6](https://github.com/antonbaliasnikov/release-pls-plz/compare/prover-v0.1.5...prover-v0.1.6) (2024-12-17)
+
+
+### Features
+
+* update prover lib ([9cd7ebd](https://github.com/antonbaliasnikov/release-pls-plz/commit/9cd7ebd6626af76f57e4fe5dc759bfdc06a657d6))
+
 ## [0.1.5](https://github.com/antonbaliasnikov/release-pls-plz/compare/prover-v0.1.4...prover-v0.1.5) (2024-12-13)
 
 
