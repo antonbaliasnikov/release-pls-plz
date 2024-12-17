@@ -24,6 +24,7 @@ jobs:
       org-owner: 'antonbaliasnikov'
       update-cargo-lock: true
       publish-to-crates-io: true
+      workspace-dirs: 'core prover'
 
 #  release-prover:
 #    uses: matter-labs/zksync-ci-common/.github/workflows/release-plz.yaml@v1
