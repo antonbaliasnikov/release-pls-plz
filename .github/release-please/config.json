@@ -1,7 +1,7 @@
 {
-  "separate-pull-requests": false,
-  "group-pull-request-title-pattern": "chore: release ${scope}",
-  "bootstrap-sha": "2642a686b3688ca0b4ceea970e52e28fa26c7c45",
+  "separate-pull-requests": true,
+  "group-pull-request-title-pattern": "chore: release ${component} ${version}",
+  "bootstrap-sha": "84f7d909860f915fd7bd8e635e3b57767545c6c8",
   "bump-minor-pre-major": true,
   "bump-patch-for-minor-pre-major": true,
   "include-component-in-tag": true,
