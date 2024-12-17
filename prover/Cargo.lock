@@ -4,8 +4,8 @@ version = 4
 
 [[package]]
 name = "prover-lib-1"
-version = "0.1.5"
+version = "0.1.6"
 
 [[package]]
 name = "prover-lib-2"
-version = "0.1.5"
+version = "0.1.6"
